@@ -8,7 +8,7 @@ interface MovieGridProps {
 
 export default function MovieGrid({onSelect, movies} : MovieGridProps){
     if(movies.length === 0){
-        return;
+        return null;
     }
     return (
     <ul className={css.grid}>
